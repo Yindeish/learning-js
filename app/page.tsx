@@ -10,20 +10,43 @@ const mont = Montserrat({
 export default function Home() {
 
   // Declaration
-  const arrays: number[] = [];
+  // const arrays: number[] = [];
 
-  arrays.push(1)
+  // arrays.push(1)
 
-  arrays.push(2.5) //float
+  // arrays.push(2.5) //float
 
-  arrays.push(0)
-  // 4, 5
-  console.log(arrays.push(4, 5))
+  // arrays.push(0)
+  // // 4, 5
+  // console.log(arrays.push(4, 5))
 
-  // arrays.pop()
+  // // arrays.pop()
 
-  console.log(arrays.pop())
-  
+  // console.log(arrays.pop())
+
+  // const arrays: boolean[] = [true, false, false, true];
+
+  // for loop
+  // for (declaration and start; condition, what to do after result like increase or decrease for example)
+  // const arrays = [10, 20, 30, 40, 50, 60];
+
+  // for (let index = 0; index < 2; index += 1) {
+  //   const currentItem = arrays[index];
+  //   console.log(currentItem, 'currentItem')
+  // }
+
+  // for (let number of arrays) {
+  //   console.log(number, 'number')
+  // }
+
+  // Parent functions
+  // baby functions
+  const arrays = [10, 20, 30, 40, 50, 60];
+
+  arrays.forEach((number, index) => {
+    console.log(number, index, 'number, index')
+  })
+
 
   return (
     <div className="w-screen h-screen bg-white flex items-center justify-center">
