@@ -1,4 +1,10 @@
 'use client'
+import { Montserrat } from "next/font/google";
+
+const mont = Montserrat({
+  weight: ['100', '200', '900'],
+  subsets: ['latin']
+})
 
 
 export default function Home() {
@@ -17,10 +23,13 @@ export default function Home() {
   // arrays.pop()
 
   console.log(arrays.pop())
+  
 
   return (
-    <div className="w-screen h-screen bg-white flex items-center justify-center text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[green] to-[black]">
-      LEARNING JAVASCRIPT/TYPESCRIPT
+    <div className="w-screen h-screen bg-white flex items-center justify-center">
+      <div className={`text-center text-[70px] font-black text-transparent bg-clip-text bg-gradient-to-r from-[green] to-[black] ${mont.className}`}>
+        LEARNING JAVASCRIPT/TYPESCRIPT
+      </div>
     </div>
   );
 }
