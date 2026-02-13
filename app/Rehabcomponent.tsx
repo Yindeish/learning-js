@@ -32,28 +32,19 @@ console.table(["Elzero", "Ahmed", "Sameh", "Gamal", "Aya"]);
 
 //Then complete the following output requirements:
 
-// Normal Concatenate = 1020
-let numberOne = 10;
-let numberTwo = 20;
-// Add Variables Here
-
-// Ouput
-console.log("" + numberOne + numberTwo); // Normal Concatenate => "1020"
-console.log(typeof ("" + numberOne + numberTwo)); // Normal Concatenate => String
-console.log(`${numberOne}${numberTwo}`); // Template Literals Way => 1020
-console.log(typeof `${numberOne}${numberTwo}`); // Template Literals Way => String
-
-/* Rules
-
-You must NOT modify any existing console.log lines.
-
-You must NOT write any extra console.log.
-
-You must only replace "Add Code Here".
-
-Line 5 and 6 must be printed using only one console.log.
-
-Line 7 and 8 must be printed using only one console.log.
 
 
-*/
+const ar = "rehab alzarqa";
+console.log(ar.indexOf("rehab"));
+const a = "rehab alzarqa";
+console.log(a.indexOf("rehab"));
+console.log(a.indexOf("rehab", 2));
+
+console.log(a.lastIndexOf("a"));
+console.log(a.slice(0)); // start and end index so  recult here is ehab alzarqa and not encloding the end
+console.log(a.slice(-2)); // negative value
+console.log(a.repeat(3)); // will repete yor var value 3 times
+console.log(a.split("")); // arrays , cutting the value
+console.log(a.substring(3));
+
+
