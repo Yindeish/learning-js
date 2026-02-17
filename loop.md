@@ -8,7 +8,7 @@
 2. for of
 3. for in
 4. forEach
-5. map
+5. map // value, index (positon of the value)
 6. filter
 7. find
 8. keys

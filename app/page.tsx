@@ -1,5 +1,6 @@
 'use client'
 import { Montserrat } from "next/font/google";
+import { arrayOfArrays, users } from "./Rehabcomponent";
 
 const mont = Montserrat({
   weight: ['100', '200', '900'],
@@ -41,18 +42,38 @@ export default function Home() {
 
   // Parent functions
   // baby functions
-  const arrays = [10, 20, 30, 40, 50, 60];
+  // const arrays = [10, 20, 30, 40, 50, 60];
 
-  arrays.forEach((number, index) => {
-    console.log(number, index, 'number, index')
+  // function doSmth() {
+  //   console.log('users')
+  // }
+
+  // const arrowFunction = () => {
+
+  // }
+
+  // arrayOfArrays.forEach((value, index) => {
+  //   console.log(value, 'value', index, 'index')
+  // })
+
+  
+  // users.forEach(arrowFunction)
+
+// return smth
+  const newList = users.map((value, index) => {
+    return value.name;
   })
 
+  console.log(newList, 'newList')
+  console.log(users, 'users')
 
   return (
     <div className="w-screen h-screen bg-white flex items-center justify-center">
       <div className={`text-center text-[70px] font-black text-transparent bg-clip-text bg-gradient-to-r from-[green] to-[black] ${mont.className}`}>
         LEARNING JAVASCRIPT/TYPESCRIPT
       </div>
+
+
     </div>
   );
 }
