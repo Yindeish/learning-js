@@ -2,8 +2,8 @@
 
 export const users = [
   { name: "Ahmed", age: 25, city: "Cairo", married: false },
-  { name: "Sameh", age: 30, city: "Alex" },
-  { name: "Aya", age: 22, city: "Giza" },
+  { name: "Sameh", age: 30, city: "Alex", married: true },
+  { name: "Aya", age: 22, city: "Giza", married: true },
 ]; // Array of objects
 
 

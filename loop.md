@@ -9,10 +9,10 @@
 3. for in
 4. forEach
 5. map // value, index (positon of the value)
-6. filter
+6. filter // value, index (positon of the value)
 7. find
+11. sort
 8. keys
 9. values
 10. entries
-11. sort
 12. reduce

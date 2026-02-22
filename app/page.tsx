@@ -56,16 +56,16 @@ export default function Home() {
   //   console.log(value, 'value', index, 'index')
   // })
 
-  
+
   // users.forEach(arrowFunction)
 
-// return smth
-  const newList = users.map((value, index) => {
-    return value.name;
-  })
+  // return smth
+  // const newList = users.map((value, index) => {
+  //   return value.name;
+  // })
 
-  console.log(newList, 'newList')
-  console.log(users, 'users')
+  // console.log(newList, 'newList')
+  // console.log(users, 'users')
 
   return (
     <div className="w-screen h-screen bg-white flex items-center justify-center">
