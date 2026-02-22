@@ -5,14 +5,43 @@ export default function Home() {
   // Blok of Code
   //  }
 
-  const myFrinds = ["rehab", "osama", "sara"];
-
-  const onlyNames = [];
-  for (let i = 0; i < myFrinds.length; i++) {
-    if (typeof myFrinds[i] === "string") onlyNames.push(myFrinds[i]);
+  const start = 10;
+  const end = 100;
+  const exclude = 40;
+  for (let i = start; i <= end; i = i + start) {
+    if (i === exclude) {
+      continue;
+    }
+    console.log(i);
   }
-  console.log(onlyNames);
-  // JSX/TSX starts here
+
+  const start1 = 10;
+  const end1 = 0;
+  const stop1 = 3;
+
+  for (let i = start1; i > end1; i--) {
+    if (i < start1) {
+      console.log(` 0${i}`);
+    } else {
+      console.log(i);
+    }
+    if (i === stop1) {
+      break;
+    }
+  }
+
+  const start2 = 1;
+  const end2 = 6;
+  const breaker2 = 2;
+
+  // This Is Nested Loop But It Can Be Done With One Loop
+
+  for (let i = start2; i <= end; i++) {
+    console.log(i);
+    for (let j = breaker2; j <= end2; j *= j) {
+      console.log("-- " + j);
+    }
+  } // JSX/TSX starts here
   return (
     <div className="w-screen h-screen bg-yellow flex flex-col items-center justify-center">
       <div
