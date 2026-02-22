@@ -1,9 +1,10 @@
 
 
 export const users = [
-  { name: "Ahmed", age: 25, city: "Cairo", married: false },
-  { name: "Sameh", age: 30, city: "Alex", married: true },
   { name: "Aya", age: 22, city: "Giza", married: true },
+  { name: "Sameh", age: 30, city: "Alex", married: true }, 
+  { name: "Ahmed", age: 25, city: "Cairo", married: false }, 
+  { name: "Bahrat", age: 15, city: "Cairo", married: false }, 
 ]; // Array of objects
 
 
