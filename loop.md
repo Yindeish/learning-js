@@ -16,3 +16,5 @@
 9. values
 10. entries
 12. reduce
+14. every
+15. some
