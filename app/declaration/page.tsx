@@ -7,28 +7,50 @@ const mont = Montserrat({
     subsets: ['latin']
 })
 
+// formik
 
-export default function Home() {
-    const variable = 'value';
+const page = () => {
+
+    // variable declaration
+    const variable = 'value'; // string
+    const variable2 = 1; // number
+
+    const run = () => {
+
+    }
+
+    // declaration (definition) of objects
 
     // key-value pairs
-    // object is like a human being
-    // name -> details
-    // hair (black or green etc)
-    // speak -> action
+    // on the left we have keys
+    // on the right values
 
-    const user = {
-        // we can declare (define) variabes inside this object
-        // variable declaration
-        name: 'Rehab', // string
-        age: 20, // number
-        graduated: true, // boolean,
+    // OOP (Object Oriented Programming) 2 attributes (properties) and methods
+    // is the type of programming that focuses on or treats applications as object
+    // character (informations) like name, age, hair color, height
+    // behaviors (actions) like speak, move, run. got to sch
+
+    const person = {
+        // in object variable declaration
+        // key: value
+        variable: 'value',
+        variable2: 1,
+        name: 'Rehab',
+        age: 20,
+        isMarried: true,
+        children: ['Adam', 'Kamil'],
+        say: () => {
+            console.log(`${person.name} is ${person.name.length} letters word`)
+        },
         speak: () => {
-            console.log('speaking..')
+            // console.log('speaking..')
+            // console.log(`${person.name} is speaking..`)
+            console.log(`${person.name} is married and has ${person.children.length} children`)
         }
     }
 
-    console.log(user, 'user')
+    // console.log(person.age, 'person.age')
+    person.say()
 
 
     // JSX/TSX starts here
@@ -46,3 +68,5 @@ export default function Home() {
     );
     // JSX/TSX ends here
 }
+
+export default page;
