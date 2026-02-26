@@ -1,10 +1,12 @@
 ## Objects
 
 # Objects Declaration
-1. inside object varaible declaration
+1. inside object variable declaration
 
 
 # Extracting values and Destructuring
+1. Renaming
+2. Default value
 
 # Cloning (Copying) objects
 

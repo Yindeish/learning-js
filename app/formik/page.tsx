@@ -51,12 +51,12 @@ const page = () => {
             email: 'Email is required',
         },
         onChange: () => { 
-            console.log('changing..')
+            console.log('changing..'+formik.errors.name)
         },
         // setFeildValue: () => {}
     }
 
-    // console.log(formik.errors.email, 'formik.errors.email')
+    console.log(formik.errors.email, 'formik.errors.email')
     // formik.onChange()
 
 
