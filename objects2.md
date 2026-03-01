@@ -7,7 +7,7 @@
 1. Extracting directly
 2. Extracting by Destructuring
 
-# Renaming Object Values
+# Renaming Object Properties
 
 # Cloning (Copying) objects
 
