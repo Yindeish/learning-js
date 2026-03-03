@@ -9,8 +9,62 @@ const mont = Montserrat({
 
 export default function Home() {
 
+function namedFunction() {
+  console.log(namedFunction, "this is a named fonction");
+}
+namedFunction();
 
+const arrowFunction = () => {
+  return "this is an arrow function";
+};
+arrowFunction();
 
+function familyName(lastname: string) {
+  console.log(" my family name is " + lastname);
+}
+familyName("alzarqa");
+
+const childrenFunction = () => {};
+
+childrenFunction();
+
+const anonymousFunction = function () {
+  console.log(anonymousFunction, "il is AnonymousFunction");
+};
+anonymousFunction();
+// renaming object property
+const user = {
+  name: "rehab",
+  email: "rehab@gmail",
+  speak: () => {
+    console.log("this is action finction");
+  },
+};
+
+user.speak();
+const { name, email } = user;
+console.log(name, email);
+
+const { name: userName, email: userEmail } = user;
+console.log(userName, userEmail);
+
+const car = {
+  brand: "Toyota",
+  model: "Corolla",
+  year: 2023,
+};
+
+const { brand: lisix, model: sozoki, year: newYear } = car;
+console.log(lisix, sozoki, newYear);
+
+const person = {
+  name: "Rehab",
+  country: "Yemen",
+};
+
+const { name: sara, country: france, age = 20 } = person;
+
+console.log(sara, france, 20);
     // JSX/TSX starts here
     return (
         <div className="w-screen h-screen bg-white flex flex-col items-center justify-center">
