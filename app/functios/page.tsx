@@ -88,7 +88,7 @@ export default function FunctionsPage() {
   //10
   const arrowFunction = () => "Arrow Function";
   arrowFunction();
-  console.log(arrowFunction());
+  console.log(arrowFunction().includes('Arrow'));
   return (
     <main>
       <h1>Functions</h1>
