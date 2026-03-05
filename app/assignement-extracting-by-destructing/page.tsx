@@ -6,7 +6,7 @@ export default function Page() {
     diesel: "diesel",
   };
   const dieselValue = petroleum1.diesel;
-  console.log(dieselValue.length);
+  console.log(dieselValue.length, "disel lenght");
 
   const petroleum2 = {
     kerosine: "kerosine",
@@ -16,7 +16,7 @@ export default function Page() {
   };
 
   const { gas, petrol } = petroleum2;
-  console.log(petrol.length);
+  console.log(petrol.length, "petrol lenght");
 
   const formik = {
     values: {
@@ -26,7 +26,7 @@ export default function Page() {
     },
   };
   const newformik = formik.values;
-  console.log(newformik.email);
+  console.log(newformik.email, " email");
 
   const formik2 = {
     values: {
@@ -36,8 +36,9 @@ export default function Page() {
     },
   };
 
-  const { name } = formik2;
-  console.log(formik2.values.name);
+  const newValue = formik2.values;
+  const { name } = newValue;
+  console.log(name, "name");
 
   const formik3 = {
     values: {
@@ -78,17 +79,6 @@ export default function Page() {
   };
   const newproduct = product.price;
   console.log(newproduct + 100);
-
-  const formik4 = {
-    values: {
-      name: "Rehab",
-      email: "rehab@gmail.com",
-    },
-  };
-  const { values } = formik4; //Destructure 'values' first
-  console.log(values);
-  const newvalues = values;
-  console.log(newvalues.email.length;
 
   return <div>assignement-extracting-by-destructing</div>;
 }
