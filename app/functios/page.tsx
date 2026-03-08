@@ -107,7 +107,7 @@ export default function FunctionsPage() {
   //expected output is 25 and 20
 
   let count = 7;
-  function addTwo(value) {
+  function addTwo(value: number) {
     return value + 2;
   }
   let newCount = addTwo(count);
@@ -122,15 +122,15 @@ export default function FunctionsPage() {
   console.log(num3);
   //expected outpot is 15,15,15
 
-  const person = { name: "rehab" };
-  const user = person;
-  user.name = "john";
+  const person2 = { name: "rehab" };
+  const useR = person;
+  useR.name = "john";
   console.log(person.name);
-  console.log(user.name);
+  console.log(useR.name);
   //expected outpot is john and john
 
-  const car = { Brand: "toyota" };
-  const car2 = car;
+  const caR = { brand: "toyota" };
+  const car2 = caR;
   const car3 = car2;
   car3.brand = "hona";
   console.log(car.brand);
@@ -138,17 +138,38 @@ export default function FunctionsPage() {
   console.log(car3.brand);
   //expected outpot is hona ,hona ,hona
 
+  // come to this
+  // Refrence type
   const obj = { value: 10 };
-  function increase(date) {
-    data.value = date.value + 5;
+
+  function increase(data: { value: number }) {
+
+    data.value = data.value + 5;
+
   }
-  increase(obj);
-  console.log(obj.value);
+
+  increase(obj)
+
+  console.log(obj)
+
+  let countValue = 12;
+
+  // Primitive type
+  function increasePrmitive(data: number) {
+
+    // data = data + 5;
+    data = 0
+
+  }
+
+  increasePrmitive(countValue);
+
+  console.log(countValue);
 
   //
 
   let number = 8;
-  function muliply(val) {
+  function muliply(val: number) {
     val = val * 2;
     return val; //16
     muliply(number);
@@ -169,6 +190,7 @@ export default function FunctionsPage() {
     console.log(copy.title);
     // expected outpot is advanced js and advanced js
   }
+
   return (
     <main>
       <h1>Functions</h1>
