@@ -1,3 +1,5 @@
+import { Braah_One } from "next/font/google";
+
 export default function FunctionsPage() {
   //1
   function greet() {
@@ -89,6 +91,84 @@ export default function FunctionsPage() {
   const arrowFunction = () => "Arrow Function";
   arrowFunction();
   console.log(arrowFunction());
+
+  let a = 5;
+  let b = a;
+  b = 10;
+  console.log(a);
+  console.log(b);
+  //expected output  is 5 and 10
+
+  let x = 20;
+  let y = x;
+  x = x + 5;
+  console.log(x);
+  console.log(y);
+  //expected output is 25 and 20
+
+  let count = 7;
+  function addTwo(value) {
+    return value + 2;
+  }
+  let newCount = addTwo(count);
+  console.log(count);
+  console.log(newCount);
+
+  let num1 = 15;
+  let num2 = num1;
+  let num3 = num2;
+  console.log(num1);
+  console.log(num2);
+  console.log(num3);
+  //expected outpot is 15,15,15
+
+  const person = { name: "rehab" };
+  const user = person;
+  user.name = "john";
+  console.log(person.name);
+  console.log(user.name);
+  //expected outpot is john and john
+
+  const car = { Brand: "toyota" };
+  const car2 = car;
+  const car3 = car2;
+  car3.brand = "hona";
+  console.log(car.brand);
+  console.log(car2.brand);
+  console.log(car3.brand);
+  //expected outpot is hona ,hona ,hona
+
+  const obj = { value: 10 };
+  function increase(date) {
+    data.value = date.value + 5;
+  }
+  increase(obj);
+  console.log(obj.value);
+
+  //
+
+  let number = 8;
+  function muliply(val) {
+    val = val * 2;
+    return val; //16
+    muliply(number);
+    console.log(number);
+
+    //
+    const student = { name: "sara" };
+    const anotherStudent = student;
+    student.name = "david";
+    console.log(anotherStudent.name);
+
+    // expected output is david
+
+    const book = { title: "JS guide" };
+    let copy = book;
+    copy.title = "advanced js";
+    console.log(book.title);
+    console.log(copy.title);
+    // expected outpot is advanced js and advanced js
+  }
   return (
     <main>
       <h1>Functions</h1>
