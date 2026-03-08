@@ -10,3 +10,4 @@
 
 # Destructuring variables
 
+# scopes
