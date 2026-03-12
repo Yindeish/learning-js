@@ -18,17 +18,20 @@ export default function Home() {
 
     const increaseby10AndReturn = (value: number) => {
         // return value + 10;
-        return 10;
+        return 20 - value;
         // value = value = 10;
     }
 
-    let result = increaseby10AndReturn(count1) // result 10
+    let result = increaseby10AndReturn(count1) // result 20 - 35 = -15
 
-    count1 = result - count1; // -25
-    result = count1; // -25
 
-    console.log('result', result) // -25
-    console.log('count1', count1) // -25
+    count1 = result - count1; // -15 - 35 = -50
+    count2 = result; //  count2 = -15
+    count1 = count1 + count2; // count1 = -50 + -15 = -65
+
+    console.log('result', result) // -15
+    console.log('count1', count1) //  -65
+    console.log('count2', count2) //  -15
 
 
 

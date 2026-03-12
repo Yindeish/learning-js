@@ -63,30 +63,56 @@ type counter = {
 
 
 export default function Home() {
+    // Non Returning Functions
 
-    const name = 'Rehab'
+    // const counter1 = {
+    //     value: 30
+    // }
 
-    const counter1 = {
-        value: 30
+    // const counter2 = counter1; // counter1.value 30 counter2.value 30
+
+    // const updateObjectBy5 = (counter: counter) => {
+    //     counter.value = counter.value + 5;
+    // }
+
+    // updateObjectBy5(counter1) // counter1.value 35 counter2.value 35
+
+    // updateObjectBy5(counter2) // counter1.value 40 counter.value 40
+
+    // console.log('counter1', counter1) // counter1.value 40
+    // console.log('counter2', counter2) // counter1.value 40
+
+
+
+    // Returning Function
+
+    type Counter = {
+        value: number,
+        stage: number
     }
 
-    const arrays = []
-
-
-    const updateObjectBy5 = (value: counter) => {
-
+    // It's a bad practice to change the whole object
+    // However cha ge one or two fields is a grood choice
+    const counter1: Counter = {
+        value: 30,
+        stage: 10
     }
 
-    const car = {
-        expired: true,
-        model: 2019,
-        name: 'BMW'
+
+    // {:} declare a variable in an object
+    // (:) use it as type of a variable
+
+    const increaseBy10 = (counter: Counter) => {
+        // return counter.value + 10;
+        // return 10;
+        return counter.value;
     }
 
-    updateObjectBy5(counter1)
+    counter1.value = increaseBy10(counter1) // counter1.value  = 30
+    counter1.stage = increaseBy10(counter1) //  counter1.stage = 30 
 
-
-
+    console.log('counter1.value', counter1.value) // counter1.value 30
+    console.log('counter1.stage', counter1.stage) // counter1.stage 30
 
 
     // const counter1 = {
