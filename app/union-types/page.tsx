@@ -15,7 +15,7 @@ export default function Home() {
     //  OR
     // first or second or third
 
-    // |
+    // | +
     // first | second | third
 
     type Light = 'on' | 'off';
@@ -27,7 +27,8 @@ export default function Home() {
     type Mood = 'happy' | 'sad';
 
     type Bulb = {
-        light: Light
+        light: Light,
+        mode: Mode
     }
 
     type Person = {
@@ -36,11 +37,40 @@ export default function Home() {
         bulb: Bulb
     }
 
-    const person: Person = {
-        mood: 'happy',
-        life: 'living',
-        bulb: {
+    // const person: Person = {
+    //     mood: 'happy',
+    //     life: 'living',
+    //     bulb: {
+    //         light: 'off',
+    //         mode: 'light'
+    //     }
+    // }
 
+
+    type Pupil = { //primary sch students
+        busSeats: number,
+        numberOfclassrooms: number //2
+    }
+
+
+    type UnderGraduate = {
+        carSeats: number,
+        numberOfAudithorium: number //2
+    }
+
+
+    type Student = {
+        name: string
+        age: number
+        studentShipType: Pupil | UnderGraduate
+    }
+
+    const rehab: Student = {
+        age: 25,
+        name: 'Rehab',
+        studentShipType: {
+            busSeats: 4,
+            numberOfclassrooms: 9
         }
     }
 
