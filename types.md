@@ -8,6 +8,8 @@
 
 # Grouping Types
 
+# Merging Types
+
 # Array of Types
 
 # Object Types
