@@ -1,6 +1,5 @@
 'use client'
 import { Montserrat } from "next/font/google";
-import { Brand, Variable } from "@/types";
 
 
 
@@ -12,28 +11,12 @@ const mont = Montserrat({
 
 export default function Home() {
 
-    // Declaring Types (type keyword)
-
-    const variable: Brand = 'value'; // staright line
-
-    // : typeof
-    // when we declare a vairable or a constant
-    // type Brand: string = 'toyota '
+    // Union types
+    //  OR
+    // first or second or third
 
 
-    let score: number = 10;
 
-    const variable2: Variable = {
-        count: 1
-    }
-
-    const variable3 = {
-        count: 5
-    }
-
-    const variables: Variable[] = [
-        variable2, variable3
-    ]
 
 
 
@@ -41,10 +24,9 @@ export default function Home() {
     return (
         <div className="w-screen h-screen bg-white flex flex-col items-center justify-center">
             <div className={`text-center text-[70px] font-black text-transparent bg-clip-text bg-gradient-to-r from-[green] to-[black] ${mont.className}`}>
-                TypeScript Types
+                Union Types
             </div>
             <div className="text-2xl text-black flex flex-col gap-1">
-
 
             </div>
 
