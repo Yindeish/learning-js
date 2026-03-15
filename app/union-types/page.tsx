@@ -15,38 +15,6 @@ export default function Home() {
     //  OR
     // first or second or third
 
-    // |
-    // first | second | third
-
-    type Light = 'on' | 'off';
-
-    type Mode = 'light' | 'dark';
-
-    type Life = 'dead' | 'living'
-
-    type Mood = 'happy' | 'sad';
-
-    type Bulb = {
-        light: Light
-    }
-
-    type Person = {
-        mood: Mood,
-        life: Life,
-        bulb: Bulb
-    }
-
-    const person: Person = {
-        mood: 'happy',
-        life: 'living',
-        bulb: {
-
-        }
-    }
-
-
-
-
     // JSX/TSX starts here
     return (
         <div className="w-screen h-screen bg-white flex flex-col items-center justify-center">
