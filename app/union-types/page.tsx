@@ -14,8 +14,8 @@ export default function Home() {
   //  OR
   // first or second or third
 
-  // |
-  // first | second | third
+    // |
+    // first | second | third
 
   type Light = "on" | "off";
 
@@ -25,9 +25,9 @@ export default function Home() {
 
   type Mood = "happy" | "sad";
 
-  type Bulb = {
-    light: Light;
-  };
+    type Bulb = {
+        light: Light
+    }
 
   type Person = {
     mood: Mood;
@@ -35,13 +35,16 @@ export default function Home() {
     bulb: Bulb;
   };
 
-  const person: Person = {
-    mood: "happy",
-    life: "living",
-    bulb: {
-        light: "off",
-    },
-  };
+    const person: Person = {
+        mood: 'happy',
+        life: 'living',
+        bulb: {
+
+        }
+    }
+
+
+
 
   // JSX/TSX starts here
   return (
