@@ -52,7 +52,6 @@ export default function Home() {
 
     const userSkills: Skills = 'reactjs,html,css';
 
-    // Create a type that validates a variable name to be pascals
 
 
 
