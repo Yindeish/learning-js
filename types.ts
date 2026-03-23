@@ -1,5 +1,4 @@
 
-
 export type Brand = string;
 
 export type Integer = number;

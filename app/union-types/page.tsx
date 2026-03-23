@@ -4,8 +4,8 @@ import { Montserrat } from "next/font/google";
 
 
 const mont = Montserrat({
-    weight: ['100', '200', '900'],
-    subsets: ['latin']
+  weight: ['100', '200', '900'],
+  subsets: ['latin']
 })
 
 
@@ -14,8 +14,10 @@ export default function Home() {
   //  OR
   // first or second or third
 
-    // |
-    // first | second | third
+  // |
+  // first | second | third
+
+  type Who = 'me' | 'you';
 
   type Light = "on" | "off";
 
@@ -25,9 +27,23 @@ export default function Home() {
 
   type Mood = "happy" | "sad";
 
-    type Bulb = {
-        light: Light
-    }
+  type CarBrand = 'buggatti' | 'BMW' | 'Mercedece' | 'Hyundai' | 'toyota';
+  // one car
+  // buggatti
+  // BMW
+  // Mercedece
+  // Hyundai
+  // toyota
+
+  // pick one thing out of many selections or choices
+
+  const rehabCar: CarBrand = 'BMW';
+
+
+
+  type Bulb = {
+    light: Light
+  }
 
   type Person = {
     mood: Mood;
@@ -35,13 +51,22 @@ export default function Home() {
     bulb: Bulb;
   };
 
-    const person: Person = {
-        mood: 'happy',
-        life: 'living',
-        bulb: {
+  type Company = {
+    anniversary: number,
+    numberOfWorkers: number,
+    runningOperation: boolean,
 
-        }
+  }
+
+  // const allCompaniesInParis: Company[] = []
+
+  const person: Person = {
+    mood: 'happy',
+    life: 'living',
+    bulb: {
+
     }
+  }
 
 
 

@@ -1,5 +1,6 @@
 'use client'
 import { Montserrat } from "next/font/google";
+// import type { Brand, Variable } from "@/types";
 import { Brand, Variable } from "@/types";
 
 

@@ -29,7 +29,9 @@ export default function Home() {
 
     const url: Url = 'https://';
 
-    type Email = `${string}@gmail.com`;
+    type Email = `${string}@gmail.com`; // strict types
+
+    const name: string = '';
 
     const gmail = 'adeshinaadam0' + '@gmail.com';
 
@@ -41,6 +43,10 @@ export default function Home() {
     // iphone9
     // iphone10
     type Iphone = `iphone${number}`;
+
+    type PutBool = `${boolean | 'me' | 'you'}`;
+
+    const puttingBool: PutBool = 'me';
 
     const newIphoneVersion: Iphone = `iphone${12}`;
 
