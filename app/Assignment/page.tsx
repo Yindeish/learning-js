@@ -87,6 +87,10 @@ type file = `${TypeUnique}.${fileType}`;
 //  • Must be uppercase
 //  • Words separated by _
 
+type Word = Uppercase<string>;
+type Env = `${Word}_${Word}`;
+const W1: Env = "DB_PASSWORD";
+
 // 7. Route Slug Generator
 // Create a type for blog slugs:
 // /blog/my-first-post
@@ -94,6 +98,8 @@ type file = `${TypeUnique}.${fileType}`;
 // Requirements:
 //  • Must start with /blog/
 //  • Followed by kebab-case string
+type Kebab = `${Lowercase<string>}-${Lowercase<string>}`;
+type Blog = `/blog/${Kebab}`;
 
 // 8. Hex Color Code
 // Strictly type valid hex colors:
@@ -102,6 +108,8 @@ type file = `${TypeUnique}.${fileType}`;
 // Requirements:
 //  • Must start with #
 //  • Either 3 or 6 hex characters
+type HexChar = "a" | "b" | "c";
+type Color = `#${HexChar}`;
 
 // 9. Version Tag System
 // Create a type for versions like:
@@ -110,6 +118,8 @@ type file = `${TypeUnique}.${fileType}`;
 // Requirements:
 //  • Must start with v
 //  • Follow semantic versioning pattern
+
+
 
 // 10. Dynamic Permission System (Advanced)
 // Create a type like:
