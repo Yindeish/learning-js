@@ -6,9 +6,9 @@
 
 # Strict Types ✅
 
-# Grouping Types
-
 # Merging Types
+
+# Grouping Types
 
 # Array of Types
 
