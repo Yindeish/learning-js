@@ -1,10 +1,10 @@
-# Declaring Types
+# Declaring Types ✅
 
-# Exporting Types
+# Exporting Types ✅
 
-# Union Types
+# Union Types ✅
 
-# Strict Types
+# Strict Types ✅
 
 # Grouping Types
 
