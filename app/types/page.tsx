@@ -1,5 +1,9 @@
 'use client'
 import { Montserrat } from "next/font/google";
+// import type { Brand, Variable } from "@/types";
+import { Brand, Variable } from "@/types";
+
+
 
 const mont = Montserrat({
     weight: ['100', '200', '900'],
@@ -8,6 +12,30 @@ const mont = Montserrat({
 
 
 export default function Home() {
+
+    // Declaring Types (type keyword)
+
+    const variable: Brand = 'value'; // staright line
+
+    // : typeof
+    // when we declare a vairable or a constant
+    // type Brand: string = 'toyota '
+
+
+    let score: number = 10;
+
+    const variable2: Variable = {
+        count: 1
+    }
+
+    const variable3 = {
+        count: 5
+    }
+
+    const variables: Variable[] = [
+        variable2, variable3
+    ]
+
 
 
     // JSX/TSX starts here
