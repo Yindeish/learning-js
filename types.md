@@ -6,9 +6,9 @@
 
 # Strict Types ✅
 
-# Merging Types
+# Merging Types ✅
 
-# Grouping Types
+# Grouping Types ✅
 
 # Array of Types
 
@@ -20,4 +20,4 @@
 
 # Function Types
 
-# Utility Types (Partial, Pick, Omit)
+# Utility Types (Partial, Pick, Omit, Record)
