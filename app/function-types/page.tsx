@@ -1,0 +1,133 @@
+'use client'
+import { Montserrat } from "next/font/google";
+
+const mont = Montserrat({
+    weight: ['100', '200', '900'],
+    subsets: ['latin']
+})
+
+
+export default function Home() {
+    // custom types or user-defined types
+    // basic types
+
+    // examples of built-in types in Typescript
+    // string, number, boolean, void, any, never, unknown, null
+
+    type User = { name: string }
+
+    // const users: Array<User> = [] //type casting
+
+    // const users2: User[] = []
+
+    // [], {}
+    // Array
+    // Object
+    // Function
+
+    // Basically, there 2 ways to decalare a function type
+
+    // ! A good function type will tell you all the infos about the function
+    // ! 1. Arguments the function needs (input)
+    // ! 2. The type of value the fucntion returns (output)
+
+    // ! 1 Using the Function keyword
+
+    const calculateValue: Function = (value: string) => {
+
+    }
+
+
+
+
+
+    // ! 1 Custom Type in function
+
+    type ReturnsUppercase = (word: string) => string;
+
+    type CreatesUserId = (fnThatReturnsUppercase: ReturnsUppercase) => `USER-000990-${string}`;
+
+    const returnsUppercase: ReturnsUppercase = (word: string) => {
+        return word.toUpperCase();
+    }
+
+    const generateUserId: CreatesUserId = (fnThatReturnsUppercase: ReturnsUppercase) => {
+        return `USER-000990-${userName}`;
+    }
+
+    // USER-000990-REHAB
+
+    const userName = 'Rehab';
+
+    returnsUppercase(userName) //! REHAB
+
+    generateUserId(returnsUppercase(userName))
+
+
+
+
+
+
+
+    type CalculateValue2 = (value: string) => void;
+
+    const calculateValue2: CalculateValue2 = (value: string) => {
+
+    }
+
+    type SumNumbers = (num1: number, num2: number) => number;
+
+    const sumNumbers: SumNumbers = (val1: number, val2: number) => {
+        return val1 + val2;
+    }
+
+    const count = 1;
+
+    sumNumbers(count, count)
+    sumNumbers(3, 4);
+
+    // !1st phase when you declare the function (parameter) //parameters are variables we pass to a function
+    // !2nd phase when you use the function (argument) //arguments are variables or values we pass to a function when we use it
+
+    // parameter
+    // argument
+    // Higher order functions //! fucntions that take another function or functions as arguments
+    [].map(() => { });
+    [].filter(() => { });
+    [].find(() => { });
+    [].find(() => { });
+
+
+
+    // callback //! is a function you pass to another function as an argument
+
+    [].find(
+        // !callback
+        () => { }
+    );
+    [].find(
+        // !callback
+        () => { }
+    );
+
+
+
+
+
+
+
+    // JSX/TSX starts here
+    return (
+        <div className="w-screen h-screen bg-white flex flex-col items-center justify-center">
+            <div className={`text-center text-[70px] font-black text-transparent bg-clip-text bg-gradient-to-r from-[green] to-[black] ${mont.className}`}>
+                Function Types
+            </div>
+            <div className="text-2xl text-black flex flex-col gap-1">
+
+
+            </div>
+
+        </div>
+    );
+    // JSX/TSX ends here
+}
