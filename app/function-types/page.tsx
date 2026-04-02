@@ -1,5 +1,8 @@
 'use client'
 import { Montserrat } from "next/font/google";
+import { useState } from "react";
+
+
 
 const mont = Montserrat({
     weight: ['100', '200', '900'],
@@ -7,7 +10,96 @@ const mont = Montserrat({
 })
 
 
+
 export default function Home() {
+    // Types of Variables
+
+    // !Global variables
+    // !Block (Local) variables //!inside a function, if statement, loop block (e.g map method of array)
+
+    // !Paramater is a variable we use a in a function
+
+
+    // Arrow functions
+
+    // object
+    type DoSmth = () => void;
+
+    const concartenateStrings = (str1: string, str2: string) => {
+
+    }
+
+    concartenateStrings('one', 'two');
+
+
+    // makes juice
+    // any fruit + juice
+
+    function juice(fruit: string) {
+        return fruit + 'juice';
+        // fruit+juice
+    }
+
+    // console.log('apple' + 'juice');
+
+
+    const name = 'orange';
+
+    // console.log(juice(name)) //! returns name + juice // orange juice // variable as an argument
+
+    juice('apple') // value as an argument
+    // argument can be a variable or a value
+
+
+
+
+    // Returning values in functions
+
+    function getZero() {
+        return 0;
+    }
+
+    // const zero1 = getZero(); // 0
+
+    // console.log(getZero(), 'zero1')
+
+
+    const zero = 0;
+
+    // console.log(zero, 'zero')
+
+    const sumTwoNumbers = (val1: number, val2: number): number => {
+        return val1 + val2;
+    }
+
+    console.log(sumTwoNumbers(3, 4));
+
+    const added = sumTwoNumbers(3, 4);
+
+    console.log(added, 'added')
+
+    function addNumbers(val1: number, val2: number): number {
+        // val1 + val2
+        return val1 + val2;
+    }
+
+    console.log(addNumbers(3, 4));
+
+    const sum = addNumbers(3, 4);
+
+    console.log(sum, 'sum')
+
+
+
+
+
+
+
+
+
+
+
+
     // custom types or user-defined types
     // basic types
 
@@ -61,7 +153,7 @@ export default function Home() {
 
     returnsUppercase(userName) //! REHAB
 
-    generateUserId(returnsUppercase(userName))
+    // generateUserId(returnsUppercase(userName))
 
 
 
