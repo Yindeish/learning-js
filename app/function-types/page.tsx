@@ -12,6 +12,67 @@ const mont = Montserrat({
 
 
 export default function Home() {
+    // ! 2 ways of declaring function types
+
+    1. //! Using the function type
+    2. //! Custom method (User-defined)
+
+
+    // ! 1. Using the function type
+
+    // : after round braces () means a function returns something
+    // traditional function
+    function makeJuice(): Function {
+        return makeJuice()
+    }
+
+    // arrow function
+    const makeJuice2: Function = (): Function => {
+        return () => { };
+    }
+
+
+    2. //! Custom method (User-defined)
+
+    // !Template literal ``
+
+    // !on hover: makeCall(): void
+    function makeCall(person1: string, person2?: string): string {
+        return `Calling ${person1} and ${person2}`;
+    }
+    // !on hover: makeCall2: () => void
+    const makeCall2 = (person: string): string => {
+        return `Calling ${person}`
+    }
+
+    const returnString = (): number => {
+        return 1;
+    }
+
+    const name2 = 'Rehab';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // Types of Variables
 
     // !Global variables
