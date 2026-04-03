@@ -49,8 +49,6 @@ export default function Home() {
         return 1;
     }
 
-    const name2 = 'Rehab';
-
 
 
 
