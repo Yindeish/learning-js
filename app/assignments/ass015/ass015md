@@ -1,0 +1,71 @@
+**Assignment 015 – 
+---
+
+### 1. Function Type Alias with Object Parameters
+
+Create a function type called CreateUserFn that:
+
+* Accepts an object with:
+
+  * name: string
+  * age: number
+* Returns a string in the format: "User: <name>, Age: <age>"
+
+Then implement a function using this type.
+
+---
+
+### 2. Function Type with Optional Parameters
+
+Define a function type CalculateDiscount that:
+
+* Takes:
+
+  * price: number
+  * discount?: number (optional)
+* Returns the final price after applying the discount (default discount is 0 if not provided)
+
+Implement the function.
+
+---
+
+### 3. Function Type for Callback
+
+Create a function type OperationCallback that:
+
+* Takes two numbers
+* Returns a number
+
+Then write a function executeOperation that:
+
+* Accepts:
+
+  * two numbers
+  * a callback of type OperationCallback
+* Returns the result of the callback
+
+---
+
+### 4. Function Type with Union Return Type
+
+Define a function type ParseInput that:
+
+* Accepts a string
+* Returns either:
+
+  * a number (if the string is numeric)
+  * or null (if it cannot be converted)
+
+Implement the function with proper type handling.
+
+---
+
+### 5. Function Type Inside an Object Type
+
+Create a type MathOperations that includes:
+
+* add: function that takes two numbers and returns a number
+* subtract: same pattern
+* multiply: same pattern
+
+Then create an object that implements this type.
