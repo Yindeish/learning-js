@@ -66,6 +66,7 @@ const OperationCallback2: OperationCallback1 = ({ num1, num2 }) => {
 
 
 //    ### 4. Function Type with Union Return Type
+// ### 4. Function Type with Union Return Type
 
 // Define a function type ParseInput that:
 
