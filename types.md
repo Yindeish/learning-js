@@ -18,9 +18,13 @@
 
 # Nested Types in Objects ✅
 
-# Function Types
+# Function Types ✅
 
 # Utility Types (Partial, Pick, Omit, Record)
 
+# Inheritance
 
-<!-- Posiotional arguments vs non-positional arguments and default arguments  -->
+# Type casting
+
+
+<!-- !Positional arguments vs non-positional arguments -->

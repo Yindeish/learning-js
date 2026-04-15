@@ -1,3 +1,4 @@
+
 "use client";
 import { Montserrat } from "next/font/google";
 
@@ -6,6 +7,77 @@ const mont = Montserrat({
   subsets: ["latin"],
 });
 
+// ## 1. Function Type Alias with Object Parameters
+
+// Define the function type
+
+type CreateUserFn = (params: { name: string; age: number }) => string;
+
+// Implement the function
+
+const createUser: CreateUserFn = ({ name, age }) => {
+  return `User:${name}, Age: ${age}`;
+
+};
+
+// Call the function with valid arguments
+
+createUser({ name: "rehab", age: 34 });
+
+// ### 2. Function Type with Optional Parameters
+
+// Define a function type CalculateDiscount that:
+
+// * Takes:
+
+//   * price: number
+//   * discount?: number (optional)
+// * Returns the final price after applying the discount (default discount is 0 if not provided)
+
+// Implement the function.
+
+type CalculateDiscount = (params: {
+  price: number;
+  discount?: number;
+}) => number;
+const calcFun: CalculateDiscount = ({ price, discount }) => {
+  return price;
+};
+calcFun({ price });
+
+// Create a function type OperationCallback that:
+
+// * Takes two numbers
+// * Returns a number
+
+// Then write a function executeOperation that:
+
+// * Accepts:
+
+//   * two numbers
+//   * a callback of type OperationCallback
+// * Returns the result of the callback
+
+type OperationCallback1 = (params: { num1: number; num2: number }) => number;
+const OperationCallback2: OperationCallback1 = ({ num1, num2 }) => {
+  return num1 + num2};
+   const executeOperation:OperationCallback1= ({ num1: 14, num1: 10})
+
+
+//    ### 4. Function Type with Union Return Type
+// ### 4. Function Type with Union Return Type
+
+// Define a function type ParseInput that:
+
+// * Accepts a string
+// * Returns either:
+
+//   * a number (if the string is numeric)
+//   * or null (if it cannot be converted)
+
+// Implement the function with proper type handling.
+
+type ParseInput= (input:)
 export default function Home() {
   const sumNumbers = (num1: number, num2: number): number => {
     return num1 + num2;
@@ -33,9 +105,10 @@ export default function Home() {
       >
         Functiont Types (Short cut approach)
       </div>
-      <div className="text-2xl text-black flex flex-col gap-1"></div>
+      <div className="text-2xl text-black flex flex-col gap-1">
+        <p>My info is {userInfo}</p>
+      </div>
     </div>
   );
   // JSX/TSX ends here
 }
-emu - iuke - upd;
