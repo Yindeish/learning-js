@@ -21,3 +21,6 @@
 # Function Types
 
 # Utility Types (Partial, Pick, Omit, Record)
+
+
+<!-- Posiotional arguments vs non-positional arguments and default arguments  -->
