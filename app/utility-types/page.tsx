@@ -2,14 +2,15 @@
 import { Montserrat, } from "next/font/google";
 
 const mont = Montserrat({
-    weight: ['100', '200', '900'],
-    subsets: ['latin']
+  weight: ['100', '200', '900'],
+  subsets: ['latin']
 })
 
 export default function Home() {
   // Utility Types and they're called like fucntions in Js but with angular braces <>
   // Partial, Pick, Omit, Record
   // !not 100%
+
 
   type Document = {
     extension: string;

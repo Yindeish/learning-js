@@ -20,7 +20,7 @@
 
 # Function Types ✅
 
-# Utility Types (Partial, Pick, Omit, Record)
+# Utility Types (Partial, Pick, Omit, Record) ✅
 
 # Inheritance
 
