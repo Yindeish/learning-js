@@ -62,17 +62,13 @@ export default function Home() {
     2: 2
   }
 
-  const letters:  = {
+  const letters: Record<string, string> = {
     a: "a",
     b: "b",
     c: "c"
   }
 
-
   type NewUser = Record<string, number | string>;
-
-
-
 
   type Order = {
     id: number;
