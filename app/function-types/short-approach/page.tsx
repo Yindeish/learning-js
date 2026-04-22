@@ -6,35 +6,26 @@ const mont = Montserrat({
     subsets: ['latin']
 })
 
-export type Value = `value${number}`;
 
 export default function Home() {
-    // DRY
-    // Don't repeat yourself
 
-    type FirstType = {
-        one: Value
+
+    const sumNumbers = (num1: number, num2: number): number => {
+        return num1 + num2;
     }
 
-    type SecondType = {
-        two: Value
+    // const concartenateStrings = (str1: string, str2: string):string => {}
+
+    const concartenateStrings = (str1: string, str2: string): string => {
+        return `${str1} ${str2}`;
     }
 
-    type CollectionOfTypes = FirstType & SecondType;
+    console.log(concartenateStrings('Rehab', 'Alzarq'));
 
-    type ThirdType = FirstType & {
-        three: Value
-    }
 
-    const collection: CollectionOfTypes = {
-        one: 'value1',
-        two: 'value2'
-    }
+    // create a fucntion that returns somethng like this 'USER1', 'USER2', etc
 
-    const variable3: ThirdType = {
-        one: 'value1',
-        three: 'value3'
-    }
+
 
 
 
@@ -42,7 +33,7 @@ export default function Home() {
     return (
         <div className="w-screen h-screen bg-white flex flex-col items-center justify-center">
             <div className={`text-center text-[70px] font-black text-transparent bg-clip-text bg-gradient-to-r from-[green] to-[black] ${mont.className}`}>
-                Merging Types
+                Functiont Types (Short cut approach)
             </div>
             <div className="text-2xl text-black flex flex-col gap-1">
 

@@ -6,18 +6,25 @@
 
 # Strict Types ✅
 
-# Merging Types
+# Merging Types ✅
 
-# Grouping Types
+# Grouping Types ✅
 
-# Array of Types
+# Array of Types ✅
 
-# Object Types
+# Object Types ✅
 
-# Optional Types
+# Optional Types ✅
 
-# Nested Types in Objects
+# Nested Types in Objects ✅
 
-# Function Types
+# Function Types ✅
 
-# Utility Types (Partial, Pick, Omit)
+# Utility Types (Partial, Pick, Omit, Record) ✅
+
+# Inheritance 
+
+# Type casting
+
+
+<!-- !Positional arguments vs non-positional arguments -->
