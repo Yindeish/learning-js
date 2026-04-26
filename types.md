@@ -22,7 +22,7 @@
 
 # Utility Types (Partial, Pick, Omit, Record) ✅
 
-# Inheritance 
+# Inheritance ✅
 
 # Type casting
 

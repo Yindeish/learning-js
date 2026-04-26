@@ -6,7 +6,59 @@ const mont = Montserrat({
     subsets: ['latin']
 })
 
+// ! Concepts (Topics) in OOP
+
+// ! Abstraction
+// ! Encryption
+// ! Inheritance
+// ! Polymorphism
+
+
 export default function Home() {
+
+    // type Parent = {
+    //     hasCar: boolean,
+    //     hasHouses: boolean,
+    //     wives: number,
+    //     children: number,
+    //     name: string
+    // }
+
+    // type Child = {
+
+    // }
+
+    // ! DRY - Don't Repeat Yourself
+
+    interface Parent {
+        hasCar: boolean,
+        hasHouses: boolean,
+        wives: number,
+        children: number,
+        name: string
+    }
+
+    const joe: Parent = {
+        children: 5,
+        hasCar: true,
+        hasHouses: true,
+        name: 'joe',
+        wives: 4
+    }
+
+    interface Child extends Parent {
+
+    }
+
+    const mosh: Child = {
+        children: 2,
+        hasCar: true,
+        hasHouses: true,
+        name: 'Mosh',
+        wives: 1
+    }
+
+
 
     // JSX/TSX starts here
     return (
