@@ -24,7 +24,7 @@
 
 # Inheritance ✅
 
-# Type casting
+# Type casting ✅
 
 
 <!-- !Positional arguments vs non-positional arguments -->
