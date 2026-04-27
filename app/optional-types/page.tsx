@@ -6,43 +6,33 @@ const mont = Montserrat({
     subsets: ['latin']
 })
 
-export type Value = `value${number}`;
 
 export default function Home() {
-    // DRY
-    // Don't repeat yourself
 
-    type FirstType = {
-        one: Value
+    // present but not necessary
+
+    type House = {
+        rooms: number,
+        hasGarrage: boolean,
+        hasStairs: boolean,
+        windows: number,
+        hasGarden?: boolean //optional (?)
     }
 
-    type SecondType = {
-        two: Value
+    const rehabHouse: House = {
+        hasGarrage: true,
+        hasStairs: true,
+        rooms: 7,
+        windows: 20,
+        hasGarden: false
     }
-
-    type CollectionOfTypes = FirstType & SecondType;
-
-    type ThirdType = FirstType & {
-        three: Value
-    }
-
-    const collection: CollectionOfTypes = {
-        one: 'value1',
-        two: 'value2'
-    }
-
-    const variable3: ThirdType = {
-        one: 'value1',
-        three: 'value3'
-    }
-
 
 
     // JSX/TSX starts here
     return (
         <div className="w-screen h-screen bg-white flex flex-col items-center justify-center">
             <div className={`text-center text-[70px] font-black text-transparent bg-clip-text bg-gradient-to-r from-[green] to-[black] ${mont.className}`}>
-                Merging Types
+                Optional Types
             </div>
             <div className="text-2xl text-black flex flex-col gap-1">
 
